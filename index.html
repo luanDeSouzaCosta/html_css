@@ -17,32 +17,34 @@ index.html
         .containerLogin {
             position: absolute;
             background-color: #000000;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           padding: 70px;
-           border-radius: 15px;
-           color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 70px;
+            border-radius: 15px;
+            color: white;
 
         }
-        .tituloLogin{
+
+        .tituloLogin {
             position: relative;
             top: 0px;
             left: 50%;
             transform: translate(-25%);
         }
-        .texto , .senha{
+
+        #name, #password {
             outline: none;
             border: none;
             padding: 10px;
             font-size: 15px;
 
         }
-        
-        .btnEntrar{
+
+        .btnEntrar {
             background-color: #09b1ff;
-            position:center;
-            padding:5px;
+            position: center;
+            padding: 5px;
             border: none;
             width: 100%;
             border-radius: 5px;
@@ -50,31 +52,48 @@ index.html
             font-size: 15px;
             cursor: pointer;
         }
-        .btnEntrar:hover{
+
+        .btnEntrar:hover {
             background-color: #ace2fc;
         }
     </style>
 </head>
 
 <body>
+    
     <div class="containerLogin">
+        
         <h1 class="tituloLogin">Login</h1>
-        <label for="lBLogin"> Digite seu nome</label>
-        <br>
-        <input type="text" placeholder="Nome" class="texto">
-        <br>
-        <br>
-        <label for="lBSenha">Digite sua senha</label>
-        <br>
-        <input type="password" placeholder="Senha" class="senha">
-        <br>
-        <br>
-        <button type="submit" class="btnEntrar">Entrar</button>
-        <a>
-            <link rel="stylesheet" href="">
-        </a>
-    </div>
+        
+        <form action="">
 
+            <label for="name"> 
+                <span>Digite seu nome</span>
+                <br>
+                <input type="text" placeholder="Nome" id="name">
+            </label>
+
+            <br>
+            <br>
+
+            <label for="password">
+                <span>Digite sua senha</span>
+                <br>
+                <input type="password" placeholder="Senha" id="password">
+            </label>
+
+            <br>
+            <br>
+
+            <button type="submit" class="btnEntrar">Entrar</button>
+            <br>
+            <br>
+            <a
+                href="file:///C:/Desktop/TUDO%20LUAN/TCC%20ESTACIO/projeto_tcc/html_css/tela%20de%20cadastro.html">Cadastre-se</a>
+
+        </div>
+
+    </form>
 </body>
 
 </html>
