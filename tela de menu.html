@@ -12,21 +12,69 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 800px;
             padding: 0px;
+            color: #000000;
+            
+        }
+
+        #titulo {
+            position:absolute;
+            top: 50px;
+            width: 25%;
+            left: 40%;
+            
+        }
+
+        h1 {
+            color: #fa0101;
+            top: 50px;
+            width: 100%;
+            left: 40%;
+
+        }
+
+        p {
+            
+            color: #000000;
+        }
+
+        #nomeItemValidade {
+            background-color:#003cff;
+            position: absolute;
+            top: 170px;
+            width: 50%;
+            left: 25%;
+            color: #000000;
+            inset-inline: center;
+        }
+        #dataAbertoFechado{
+            background-color:#33ff00;
+            position: absolute;
+            top: 270px;
+            width: 50%;
+            left: 25%;
+            color: #000000;
+            inset-inline: center;
+        }
+
+        #inputNomeItem{
+            width: 50%;
+            left: 30%;
+
         }
     </style>
 </head>
 
 <body id="bodyMenu">
-    <div>
-        <h1> Cadastro de produtosdfgfd</h1>
+    <div id="titulo">
+        <h1> Cadastro de produtos</h1>
         <p> Informe qual item será adicionado</p>
         <br>
     </div>
     <form>
-        <fieldset>
+        <fieldset id="nomeItemValidade">
             <div>
                 <label>Nome do Item</label>
-                <input type="text" name="nomeItem" id="nomeItem">
+                <input type="text" name="nomeItem" id="inputNomeItem">
             </div>
 
             <div>
@@ -34,9 +82,13 @@
                 <input type="number" name="prazo" id="prazo">
             </div>
         </fieldset>
-        <fieldset>
+        <fieldset id="dataAbertoFechado">
             <div>
-                <label>Nome do Item</label>
+                <label>Data initial</label>
+                <input type="text" name="nomeItem" id="nomeItem">
+            </div>
+            <div>
+                <label>Data initial</label>
                 <input type="text" name="nomeItem" id="nomeItem">
             </div>
         </fieldset>
