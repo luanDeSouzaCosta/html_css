@@ -1,0 +1,64 @@
+body {
+    background-color: #7a7a7a;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 0;
+    padding: 0;
+}
+.formCadLog{
+    position: absolute;
+    background-color: #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px;
+    border-radius: 15px;
+    color: white;
+}
+ul{
+    padding-left: 0px;
+}
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+input[type="text"],[type=email],[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #0ab2ff;
+}
+/*botão Entrar e Login*/
+.btnNext{
+    position: relative;
+    background-color: #0ab2ff;
+    top: 0px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.btnNext:hover {
+    background-color: #ace2fc;
+}
+.nomeSistema{
+    font-size: 30px;
+}
+.link{
+    color: #0ab2ff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+    
+
