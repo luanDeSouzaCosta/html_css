@@ -18,7 +18,7 @@
     $msg = $_GET['msg'];
     if ($msg != null) {
       ?>
-   <br><p><? echo print($msg); ?></p>
+   <br><p><? echo $msg; ?></p>
       <?
     }
     ?>

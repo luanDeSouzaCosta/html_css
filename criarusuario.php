@@ -8,8 +8,8 @@ $senha2 = $_POST['senha2'];
 $email = $_POST['email'];
 
 if ($senha != $senha2){
-    die( 'Senhas diferentes' );
-}
+    die( header("location: index.php?msg=Senhas Diferentes, realizar novo cadastro.") );
+} else {
 
 # Substitua abaixo os dados, de acordo com o banco criado
 $user = "368079";
@@ -29,6 +29,8 @@ $result_query = mysqli_query($conn, $query) or die(' Erro na query:' . $query . 
 
 mysqli_close($conn);
 
-header("location: index.php?msg=UsuarioCadastrado");
+header("location: index.php?msg=Usuário '$nome' Cadastrado");
+
+}
 
 ?>
