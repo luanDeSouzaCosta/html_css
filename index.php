@@ -15,9 +15,10 @@
       </svg> Nome do sistema</p>
     <p>Informe seus dados para realizar login no sistema.</p>
     <?php
-    if ($_GET['msg']) {
+    $msg = $_GET['msg'];
+    if ($msg != null) {
       ?>
-   <br><p><? echo print($_GET['msg']); ?></p>
+   <br><p><? echo print($msg); ?></p>
       <?
     }
     ?>
