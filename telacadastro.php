@@ -49,10 +49,10 @@
             tab-size: 100%;
         }
 
-        
+
         .btnCadastrar,.btnVoltar {
             position: relative;
-            
+
             background-color: #0ab2ff;
             top: 0px;
             padding: 8px;
@@ -73,6 +73,7 @@
 </head>
 
 <body>
+    <form name="cadastrar" action="criarusuario.php" method="post">
     <div class="cadastroContainer">
 
         <h1 id="tituloCadastro"> Cadastrar </h1>
@@ -80,34 +81,34 @@
         <label for="email">
             <span>Digite seu E-mail</span>
             <br>
-            <input type="text" placeholder="E-mail" id="email">
+            <input type="text" placeholder="E-mail" id="email" name="email">
         </label>
         <br>
         <br>
         <label for="nome">
             <span>Digite seu nome</span>
             <br>
-            <input type="text" placeholder="Nome" id="nome">
+            <input type="text" placeholder="Nome" id="nome" name="nome">
         </label>
         <br>
         <br>
         <label for="password">
             <span>Digite sua senha</span>
             <br>
-            <input type="password" placeholder="Senha" id="password">
+            <input type="password" placeholder="Senha" id="password" name="senha">
         </label>
         <br>
         <br>
         <label for="password">
             <span>Confirmar sua senha</span>
             <br>
-            <input type="password" placeholder="Senha" id="password">
+            <input type="password" placeholder="Senha" id="password" name="senha2">
         </label>
         <br>
         <div id="botoes">
             <button type="submit" class="btnCadastrar">Cadastrar</button>
-            
-            <a class="btnVoltar" href="file:///C:/Desktop/TUDO%20LUAN/TCC%20ESTACIO/projeto_tcc/html_css/index.html"
+
+            <a class="btnVoltar" href="index.php"
                 type="button">Voltar</a>
         </div>
 
