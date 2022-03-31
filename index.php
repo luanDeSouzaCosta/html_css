@@ -1,6 +1,12 @@
 <?php
 
-if ($_SESSION["login"]) header('location:index.php?msg=Usuário e Senha incorretos');
+session_start();
+if((isset ($_SESSION['login']) == true) and (isset ($_SESSION['senha']) == true))
+{
+  header('location:lista.php');
+  }
+
+$logado = $_SESSION['login'];
 
 ?>
 <!DOCTYPE html>
