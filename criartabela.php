@@ -1,9 +1,9 @@
 <?php
 
 # Substitua abaixo os dados, de acordo com o banco criado
-$user = "usuario_do_banco";
-$password = "senha_do_banco";
-$database = "nome_do_banco";
+$user = "368079";
+$password = "LuAm1003";
+$database = "cadastro";
 
 # O hostname deve ser sempre localhost
 $hostname = "localhost";
@@ -12,13 +12,19 @@ $hostname = "localhost";
 mysql_connect( $hostname, $user, $password ) or die( ' Erro na conexão ' );
 
 # Seleciona o banco de dados
-mysql_select_db( $database ) or die( 'Erro na seleção do banco' );
+'mysql_select_db( $database ) or die( 'Erro na seleção do banco' );'
 
 # Executa a query desejada
-$query = "SELECT codigo,nome,endereco FROM tabela";
+$query = "CREATE TABLE cadastro (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(50) NOT NULL,
+senha VARCHAR(30) NOT NULL,
+nome VARCHAR(30) NOT NULL,
+)
+";
 $result_query = mysql_query( $query ) or die(' Erro na query:' . $query . ' ' . mysql_error() );
 
 # Exibe os registros na tela
-while ($row = mysql_fetch_array( $result_query )) { print $row[codigo] . " -- " . $row[nome] . " -- " . $row[endereco]; }
+'while ($row = mysql_fetch_array( $result_query )) { print $row[codigo] . " -- " . $row[nome] . " -- " . $row[endereco]; }'
 
 ?>
