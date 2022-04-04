@@ -12,6 +12,7 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 0;
             padding: 0;
+           
         }
 
 
@@ -27,7 +28,7 @@
         }
 
         #tituloCadastro {
-            position: relative;
+            position: center;
             top: 0px;
             left: 15%;
         }
@@ -37,7 +38,8 @@
         #password {
             outline: none;
             border: none;
-            padding: 10px;
+            width: 90%;
+            padding: 12px;
             font-size: 15px;
 
         }
@@ -45,8 +47,9 @@
         #botoes{
             background-color: #000000;
             position: relative;
-            top: 10px;
-            tab-size: 100%;
+            top: 20px;
+        
+            
         }
 
 
@@ -55,9 +58,9 @@
 
             background-color: #0ab2ff;
             top: 0px;
-            padding: 8px;
+            padding: 9px;
+            width: 220px;
             border: none;
-            width: 72%;
             border-radius: 5px;
             color: #000000;
             font-size: 15px;
@@ -77,8 +80,9 @@
       <div class="cadastroContainer"
       <p class="nomeSistema"align="center"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
           <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-        </svg> <font size="4">Nome do sistema</font></p>
-        <h1 id="tituloCadastro"><font size="4">Cadastrar</font> </h1>
+        </svg> <font size="4">L.S.C Controle de Remédios</font></p>
+        <h1 id="tituloCadastro"><font size="6">Cadastrar</font> </h1>
+        <table width="300", height="200">
 
         <label for="email">
             <span>Digite seu E-mail</span>
