@@ -13,8 +13,8 @@
 
     <style>
         #botao{
-            position: relative; 
-            display: inline;        
+            position: relative;
+            display: inline;
         }
 
         #btnCadastrar{
@@ -44,7 +44,7 @@
         }
 
         #dataValidade{
-            height:30px;   
+            height:30px;
         }
 
         #datainicio{
@@ -92,26 +92,26 @@
         <br>
         <br>
         <p>Data inícial:</p>
-        <input type="date" maxlength="10" id="datainicio" name="inicio" value="dd/mm/yyyy" placeholder="__/__/____"/>
+        <input type="date" maxlength="10" id="datainicio" name="datainicio" value="dd/mm/yyyy" placeholder="__/__/____"/>
         <br>
         <br>
-        
+
         <p>Informe se o produto esta aberto ou fechado:</p>
         <p>
-	
-    	    Aberto: <input id="aberto" type="radio" name="citizenship" /><br />
-    	    Fechado: <input id="fechado" type="radio" name="citizenship" /><br />
-	
+
+    	    Aberto: <input id="aberto" type="radio" name="status" value=0/><br />
+    	    Fechado: <input id="fechado" type="radio" name="status" value=1 /><br />
+
         </p>
-       
+
         <br>
-        
+
             <div id="botao">
-             <p><input id="btnCadastrar" type="submit" value="Cadastrar" /> 
+             <p><input id="btnCadastrar" type="submit" value="Cadastrar" />
                 <button id="btnVoltar"><a class="btnVoltar" href="lista.php" type="button">Voltar à lista </button></a>
              </p>
             </div>
-        
+
 </form>
 </body>
 
