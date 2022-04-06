@@ -50,7 +50,7 @@ $logado = $_SESSION['login'];
     $total = mysqli_num_rows($result_query);
 
     if ($total > 0) { ?>
-<tr><td>Nome</td><td>Condição</td><td>Vencimento</td><td>Dias</td></tr>
+<tr><td><a href="lista.php" class="link">Nome</a></td><td><a href="lista.php?ord=1" class="link">Condição</a></td><td><a href="lista.php?ord=2" class="link">Vencimento</a></td><td><a href="lista.php?ord=2" class="link">Dias</a></td></tr>
 <?
       do {
 

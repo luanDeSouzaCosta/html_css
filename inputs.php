@@ -74,7 +74,7 @@
 <table width="370", height="100">
 </div>
 
-    <form action="input.php" method="post">
+    <form action="produto.php" method="post">
 
     <label for="nomeProduto">
             <span>Digite o nome do produto:</span>

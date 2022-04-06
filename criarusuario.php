@@ -21,7 +21,6 @@ $hostname = "localhost";
 
 # Conecta com o servidor de banco de dados
 $conn = mysqli_connect( $hostname, $user, $password, $db ) or die( ' Erro na conexÃ£o ' );
-mysql_connect( $hostname, $user, $password ) or die( ' Erro na conexão ' );
 
 # Executa a query desejada
 $query = "INSERT INTO cadastro (login, nome, senha) VALUES ('$email','$nome','$senha')";
@@ -29,7 +28,7 @@ $result_query = mysqli_query($conn, $query) or die(' Erro na query:' . $query . 
 
 mysqli_close($conn);
 
-header("location: index.php?msg=Usuário '$nome' Cadastrado");
+header("location: index.php?msg=Usuário '$login' Cadastrado");
 
 }
 
